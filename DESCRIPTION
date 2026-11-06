@@ -1,0 +1,36 @@
+Package: DielectricWaterR
+Title: Auditing and Exploring Dielectric Measurements of Water
+Version: 0.2.0
+Authors@R: c(person('Muhammad Zahir', 'Khan', email = 'zahirstat007@gmail.com',
+        role = c('aut', 'cre')), person('Luqman', 'Abidoye', email =
+        'kluqman2002@gmail.com', role = 'aut'))
+Description: Imports, audits, compares and visualises dielectric measurements
+        of water under fuel contamination and ageing. Provides descriptive
+        summaries, frequency-response comparisons, confidence intervals based
+        on physical-unit means, and training and testing splits that keep
+        observations from the same experimental unit together.
+        Experimental-unit safeguards address pseudoreplication concerns
+        discussed by Hurlbert (1984) <doi:10.2307/1942661>. Grouped splitting
+        is consistent with the structured-data validation principles discussed
+        by Roberts et al. (2017) <doi:10.1111/ecog.02881>. Student t
+        confidence intervals use the standard mean-interval formula described
+        in the NIST/SEMATECH e-Handbook of Statistical Methods
+        <https://www.itl.nist.gov/div898/handbook/eda/section3/eda352.htm>.
+        Experimental-unit identifiers are supplied by the user and are not
+        inferred from material labels. This research prototype does not
+        provide validated contaminant prediction or causal inference.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: readxl, ggplot2, dplyr, tidyr, rlang, stats
+Suggests: testthat
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
+Config/build/clean-inst-doc: FALSE
+NeedsCompilation: no
+Packaged: 2026-10-23 01:25:21 UTC; muhammadzahirkhan
+Author: Muhammad Zahir Khan [aut, cre],
+  Luqman Abidoye [aut]
+Maintainer: Muhammad Zahir Khan <zahirstat007@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-11-06 12:40:14 UTC
